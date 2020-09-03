@@ -23,11 +23,12 @@ class PointOfInterest(poiJson: JsonObject?): Serializable{
         try {
             place_id     = poiJson?.get(ID)?.asString ?: "00"
 //            photos       = poiJson?.get(IMAGE_URL)?.asString ?: "https://dummyimage.com/300x300/c77ec7/ffffff.jpg"
-            name         = poiJson?.get(NAME)?.asString ?: "Offer"
+            name         = poiJson?.get(NAME)?.asString ?: "Nombresito"
 //            reference    = poiJson?.get(REFERENCE)?.asString ?: "This is an Reference"
             geometry     = poiJson?.get(LOCATION)?.asJsonObject ?: JsonObject()
             rating       = poiJson?.get(RATING)?.asInt ?: 1
-            vicinity     = poiJson?.get(DIRECTION)?.asString ?: "https://www.platzi.com"
+            vicinity     = poiJson?.get(DIRECTION)?.asString ?: "Direccion del loca" +
+                    "l"
             types        = poiJson?.get(TYPE)?.asJsonArray ?: JsonArray()
 
         }catch (e: Exception){
