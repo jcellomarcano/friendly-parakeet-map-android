@@ -20,7 +20,6 @@ import com.google.android.gms.maps.model.Marker
 import com.google.gson.JsonObject
 import com.google.maps.android.ktx.addMarker
 import jcellomarcano.com.parakeetmap.Models.ApiMapSearchService
-import jcellomarcano.com.parakeetmap.Models.POIs.Candidate
 import jcellomarcano.com.parakeetmap.Models.PointOfInterest
 import jcellomarcano.com.parakeetmap.Models.UserLocation
 import jcellomarcano.com.parakeetmap.R
