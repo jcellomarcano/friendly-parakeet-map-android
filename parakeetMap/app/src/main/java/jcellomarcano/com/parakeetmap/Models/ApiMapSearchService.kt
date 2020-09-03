@@ -66,13 +66,15 @@ class ApiMapSearchService {
         urlApi = "https://maps.googleapis.com/maps/api/place/nearbysearch/"
         val authInterceptor = Interceptor { chain ->
             val url = chain.request().url().newBuilder()
-                .addQueryParameter("format", "json")
-                .addQueryParameter("location", "-33.8670522,151.1957362")
-                .addQueryParameter("radius","1500")
-                .addQueryParameter("type", "restaurant")
-                .addQueryParameter("keyword", "cruise")
-                .addQueryParameter("API_KEY", GlobalConstants.API_MAPS_KEY)
+//                .addQueryParameter("format", "json")
+//                .addQueryParameter("location", "-33.8670522,151.1957362")
+//                .addQueryParameter("radius","1500")
+//                .addQueryParameter("type", "restaurant")
+//                .addQueryParameter("keyword", "cruise")
+//                .addQueryParameter("", GlobalConstants.API_MAPS_KEY)
                 .build()
+
+            Log.i(TAG, "makeRequestNearbyPoints: $url")
 
             val newRequest = chain.request()
                 .newBuilder()

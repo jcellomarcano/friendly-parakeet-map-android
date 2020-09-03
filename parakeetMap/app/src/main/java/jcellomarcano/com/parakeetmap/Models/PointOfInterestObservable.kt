@@ -2,9 +2,9 @@ package jcellomarcano.com.parakeetmap.Models
 
 import androidx.databinding.BaseObservable
 import androidx.lifecycle.MutableLiveData
-import jcellomarcano.com.parakeetmap.Models.POIs.Candidate
+import jcellomarcano.com.parakeetmap.Models.PointOfInterest
 
-class CandidateObservable: BaseObservable() {
+class PointOfInterestObservable: BaseObservable() {
 
     private var couponRepository: PoiRepository = PoiRepositoryImpl()
     //Repositorio
@@ -13,7 +13,7 @@ class CandidateObservable: BaseObservable() {
     }
 
     //ViewModel
-    fun getCandidates() : MutableLiveData<List<Candidate>> {
+    fun getPointOfInterests() : MutableLiveData<List<PointOfInterest>> {
         return couponRepository.getPoiMaps()
     }
 }

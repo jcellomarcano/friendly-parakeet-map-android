@@ -5,7 +5,7 @@ import jcellomarcano.com.parakeetmap.Models.POIs.Candidate
 import jcellomarcano.com.parakeetmap.Models.POIs.POI
 
 interface PoiRepository {
-    fun getPoiMaps(): MutableLiveData<List<Candidate>>
+    fun getPoiMaps(): MutableLiveData<List<PointOfInterest>>
     fun callPoiAPI()
 
 }
